@@ -12,7 +12,9 @@ const App = () => (
     <div className='app__body'>
       <Login />
     </div>
-    <div className='app__footer'></div>
+    <div className='app__footer'>
+      hello
+    </div>
   </div>
 );
 

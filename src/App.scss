@@ -1,4 +1,5 @@
-$color: #EF3340;
+$color1: #EF3340;
+$color2: #FFFFFF;
 
 .app {
   display: grid;
@@ -9,12 +10,12 @@ $color: #EF3340;
 }
 .app__header {
 	grid-area: area1;
-	background-color: $color;
+	background-color: $color1;
 }
 
 .app__body {
-	background-color: greenyellow;
 	grid-area: area2;
+	background-color: $color2;
 }
 
 .app__footer {

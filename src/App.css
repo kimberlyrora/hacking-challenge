@@ -14,8 +14,8 @@
 .app__body {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  background-color: greenyellow;
   grid-area: area2;
+  background-color: #FFFFFF;
 }
 
 .app__footer {
