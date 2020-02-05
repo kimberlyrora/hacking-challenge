@@ -8,6 +8,7 @@ import kid from '../../assets/kid.svg';
 import shadow from '../../assets/shadow.svg';
 import shadow2 from '../../assets/shadow2.svg';
 import flecha from '../../assets/flecha.png';
+import Form from './components/Form';
 // import iconShield from '../../assets/iconShield.svg';
 
 const array = [
@@ -52,7 +53,9 @@ const Login = () => (
       </div>
     </section>
     <section className='container__form'>
-      formulario
+      <section className='container__form--grid'>
+        <Form />
+      </section>
     </section>
   </section>
 );

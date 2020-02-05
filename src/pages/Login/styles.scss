@@ -129,6 +129,13 @@ $color: #EF3340;
 .container__form {
 	display: grid;
 	grid-area: $area2;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
 //
 border: 1px solid red;
+}
+
+.container__form--grid {
+	grid-column: 2 / 12;
+	grid-row: 2 / 12;
 }
