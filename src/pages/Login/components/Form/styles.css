@@ -1,0 +1,21 @@
+.container__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  color: #494F66;
+}
+
+.container__title--bold {
+  color: #EF3340;
+}
+
+.container__subtitle {
+  font-size: 16px;
+  line-height: 28px;
+  color: #676F8F;
+}
+
+.container__section {
+  display: grid;
+}

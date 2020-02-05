@@ -1,15 +1,35 @@
+/* eslint-disable jsx-quotes */
 import React from 'react';
+import './styles.css';
+import frame from '../../../../assets/frame.svg';
+import dad from '../../../../assets/dad.svg';
+import mom from '../../../../assets/mom.svg';
+import kid from '../../../../assets/kid.svg';
+import shadow from '../../../../assets/shadow.svg';
+import shadow2 from '../../../../assets/shadow2.svg';
+import flecha from '../../../../assets/flecha.png';
+
+const array = [
+  // {
+  //   icon: iconShield,
+  //   description:
+  'Cotiza y compra tu seguro 100% digital',
+  // },
+  //  'Cómpralo de manera fácil y rápida',
+  //  'Hasta S/.12 millones de cobertura anual',
+  //  'Más de 300 clínicas en todo el Perú'
+];
 
 const Cover = () => (
-	<section >
-		<div className='container__cover--description'>
+  <>
+    <div className='container__cover--description'>
       <p className='container__cover--p'>
         Seguro de
         <b> Salud</b>
       </p>
       <ul className='container__cover--ul'>
         {
-          array.map((li) => <li className='container__cover--li' key={li}>{li}</li>)
+          array.map((li) => <li key={li} className='container__cover--li'>{li}</li>)
         }
       </ul>
       <nav className='container__cover--nav'>
@@ -26,7 +46,7 @@ const Cover = () => (
       <img className='container__cover--shadow' src={shadow} alt='shadow-img' />
       <img className='container__cover--shadow2' src={shadow2} alt='shadow2-img' />
     </div>
-	</section>
+  </>
 );
 
 export default Cover;
