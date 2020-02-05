@@ -1,40 +1,14 @@
-.container {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  height: 100vh;
-  grid-template-areas: "header" "caratula" "formulario" "footer";
-}
-
 .item {
   background: lightblue;
-  padding: 10px;
   border: 1px solid red;
-  /*margin-right: 10px;*/
-  /*margin-bottom: 10px;*/
-}
-
-.header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
 }
 
 .caratula {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   display: grid;
-  grid-area: caratula;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .formulario {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: formulario;
-}
-
-.footer {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

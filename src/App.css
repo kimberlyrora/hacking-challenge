@@ -1,6 +1,26 @@
-.App {
-  text-align: center;
+.app {
+  display: grid;
+  grid-template-rows: 56px 1fr 76px;
+  grid-template-areas: "area1" "area2" "area3";
 }
 
+.app__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: area1;
+  background-color: #EF3340;
+}
 
+.app__body {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  background-color: greenyellow;
+  grid-area: area2;
+}
 
+.app__footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  background-color: lightcoral;
+  grid-area: area3;
+}

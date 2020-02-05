@@ -1,16 +1,12 @@
 /* eslint-disable jsx-quotes */
-import React, { Fragment } from 'react';
+import React from 'react';
 import './styles.css';
-import Header from '../../components/Header/index.jsx';
 
 const Login = () => (
-  <Fragment className='container'>
-    <Header className='item header' />
-    <div className='item header'>header</div>
-    <div className='item caratula'>caratula</div>
-    <div className='item formulario'>formulario</div>
-    <div className='item footer'>footer</div>
-  </Fragment>
+  <section className='login__container'>
+    <div className='login__container--cover item caratula'>caratula</div>
+    <form className='login__container--form item formulario'>formulario</form>
+  </section>
 );
 
 export default Login;
