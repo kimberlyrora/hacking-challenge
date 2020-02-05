@@ -18,4 +18,58 @@
 
 .container__section {
   display: grid;
+  grid-template-rows: repeat(22, 1fr);
+}
+
+.container__section--document {
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  background-color: lightpink;
+}
+
+.container__section--typeDoc {
+  grid-column: 1/2;
+}
+
+.container__section--numberId {
+  grid-column: 2/3;
+}
+
+.container__section--dateborn {
+  grid-row: 5/8;
+  background-color: lightgreen;
+}
+
+.container__section--telephone {
+  grid-row: 9/12;
+  background-color: lightskyblue;
+}
+
+.container__section--politic1 {
+  grid-row: 13/15;
+  background-color: lightseagreen;
+}
+
+.container__section--politic2 {
+  grid-row: 16/18;
+  background-color: lightyellow;
+}
+
+.politics {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container__section--checkbox {
+  grid-column: 1/2;
+}
+
+.container__section--description {
+  grid-column: 2/13;
+}
+
+.container__section--button {
+  grid-row: 20/23;
+  background-color: lightcoral;
 }
