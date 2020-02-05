@@ -3,11 +3,18 @@ import React from 'react';
 import './styles.css';
 
 const Login = () => (
-  <section className='login__container'>
-    <section className='login__container--cover'>
-      caratula
+  <section className='container'>
+    <section className='container__cover'>
+      <div className='container__cover--transform'>
+        <div className='container__cover--description'>
+          ADIOSsssssssssss
+        </div>
+      </div>
+      <div className='container__cover--img'>
+       HASTALUEGO
+      </div>
     </section>
-    <form className='login__container--form'>formulario</form>
+    <form className='container__form'>formulario</form>
   </section>
 );
 

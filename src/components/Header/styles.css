@@ -5,6 +5,8 @@
   height: 56px;
   border-bottom: 1px solid #FC606B;
   box-sizing: border-box;
+  z-index: 99;
+  position: fixed;
 }
 
 .header__img {

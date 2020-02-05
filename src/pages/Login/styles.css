@@ -1,23 +1,25 @@
-.login__container {
+.container {
   display: grid;
   grid-template-areas: "area1" "area2";
+}
+
+.container__cover {
+  display: grid;
+  grid-area: "area1";
   border: 1px solid red;
 }
 
-.login__container--cover {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
+.container__form {
   display: grid;
-  grid-area: area1;
+  grid-area: "area2";
   grid-template-columns: repeat(2, 1fr);
   border: 1px solid red;
 }
 
-.login__container--form {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  display: grid;
-  grid-area: area2;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid red;
+.container__cover--transform {
+  width: 110%;
+  height: auto;
+  transform: rotate(4deg) translate(-30px, -10.8px);
+  border-bottom-right-radius: 40px;
+  background-color: #EF3340;
 }
