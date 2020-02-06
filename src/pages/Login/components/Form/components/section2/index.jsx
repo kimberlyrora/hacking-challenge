@@ -3,7 +3,7 @@ import React from 'react';
 import './styles.css';
 
 
-const Seccion2 = () => (
+const Section2 = () => (
   <>
     <div className='container__politics--politic1'>
       <label className='container__politics--label label1'>
@@ -31,4 +31,4 @@ const Seccion2 = () => (
   </>
 );
 
-export default Seccion2;
+export default Section2;

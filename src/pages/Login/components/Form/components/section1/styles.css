@@ -1,0 +1,54 @@
+.global-style {
+  width: 100%;
+  height: 56px;
+  background: #FFFFFF;
+  border: 1px solid #C5CBE0;
+  box-sizing: border-box;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #A3ABCC;
+  padding-left: 16px;
+  outline: none;
+}
+
+.container__section--document {
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+}
+
+.container__section--select {
+  font-size: 16px;
+  border: 1px solid #CCC;
+  height: 56px;
+  background: url(http://www.stackoverflow.com/favicon.ico) 96%/20% no-repeat #EEE;
+}
+
+.container__section--typeDoc {
+  grid-column: 1/2;
+  border-radius: 4px 0px 0px 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../../../../../../assets/red_arrow.svg) 77%/16px no-repeat #FFFFFF;
+}
+
+.container__section--numberId {
+  grid-column: 2/3;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.container__section--dateborn {
+  grid-row: 5/8;
+  background-color: lightgreen;
+  border-radius: 4px;
+}
+
+.container__section--telephone {
+  grid-row: 9/12;
+  background-color: lightskyblue;
+  border-radius: 4px;
+}

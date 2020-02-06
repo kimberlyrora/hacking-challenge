@@ -1,7 +1,8 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import './styles.css';
-import Seccion2 from './components/section2';
+import Section2 from './components/section2';
+import Section1 from './components/section1';
 
 
 const Form = () => (
@@ -12,7 +13,7 @@ const Form = () => (
     </p>
     <p className='container__subtitle'>Ingresa los datos para comenzar</p>
     <section className='container__inputs'>
-
+			<Section1 />
       {/* <div className='container__section--document'>
         <div className='container__section--typeDoc'>
           <select>
@@ -33,7 +34,7 @@ const Form = () => (
       </div> */}
     </section>
     <section className='container__politics'>
-      <Seccion2 />
+      <Section2 />
     </section>
   </form>
 );
