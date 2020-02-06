@@ -1,6 +1,7 @@
 $color1: #FFFFFF;
 $color2: #C5CBE0;
 $color3: #A3ABCC;
+$color4: #494F66;
 .global-style {
 	width: 100%;
 	height: 56px;
@@ -12,45 +13,60 @@ $color3: #A3ABCC;
   line-height: 24px;
   display: flex;
   align-items: center;
-	color: $color3;
 	padding-left: 16px;
 	outline: none;
+	margin-bottom: 15px;
 }
+
+::placeholder {
+	color: $color3;
+}
+
 .container__section--document {
 	grid-row: 1 / 4;
 	display: grid;
 	grid-template-columns: 90px 1fr;
 }
 
-.container__section--select {
-  font-size: 16px;
-  border: 1px solid #CCC;
-	height: 56px;
-	background: url(http://www.stackoverflow.com/favicon.ico) 96% / 20% no-repeat #EEE;
-}
-
 .container__section--typeDoc {
+	color: $color4;
 	grid-column: 1 / 2;
 	border-radius: 4px 0px 0px 4px;
 	appearance: none;
-	background: url(../../../../../../assets/red_arrow.svg) 77% / 16px no-repeat 	#FFFFFF;
+	background: url(../../../../../../assets/red_arrow.svg) 77% / 12px 13px no-repeat	$color1;
 }
 
 .container__section--numberId {
 	grid-column: 2 / 3;
 	border-radius: 0px 4px 4px 0px;
+	color: $color4;
 }
-
+// ----> DATE
 .container__section--dateborn {
 	grid-row: 5 / 8;
-	// grid-column: 1 / 4;
-	background-color: lightgreen;
 	border-radius: 4px;
+	color: $color4;
+	background: $color1 url(../../../../../../assets/calendar.svg) 94% / 15px 16px no-repeat;
 }
+
+input[type=date]::before { 
+	content: attr(placeholder);
+	width: 100%;
+}
+
+input[type=date]:focus::before,
+input[type=date]:valid::before { 
+	display: none 
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+// <-------
 
 .container__section--telephone {
 	grid-row: 9 / 12;
-	// grid-column: 1 / 4;
-	background-color: lightskyblue;
 	border-radius: 4px;
+	color: $color4;
 }
+

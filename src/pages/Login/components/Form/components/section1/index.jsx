@@ -5,25 +5,15 @@ import './styles.css';
 const Section1 = () => (
   <>
     <div className='container__section--document'>
-      {/* <div className='container__section--select'> */}
-        <select className='container__section--typeDoc global-style'>
-        {/* <select className='container__section--select'> */}
-          {
-            [1, 2, 3].map((doc) => <option key={doc}>{doc}</option>)
-          }
-        {/* </select> */}
-        </select>
-      {/* </div> */}
-      <input type='text' placeholder='Nro. de Documento' className='container__section--numberId global-style'>
-        {/* <input type='text' placeholder='Nro. de Documento' /> */}
-      </input>
+      <select className='container__section--typeDoc global-style'>
+        {
+          ['DNI', 'PASAPORTE', 'CARNET DE EXTRANJERIA'].map((doc) => <option key={doc}>{doc}</option>)
+        }
+      </select>
+      <input type='text' placeholder='Nro. de Documento' className='container__section--numberId global-style' />
     </div>
-    <input type='date' placeholder='Fecha de nacimiento' className='container__section--dateborn global-style'>
-      {/* <input type='date' placeholder='Fecha de nacimiento' /> */}
-    </input>
-    <input  type='text' placeholder='Celular' className='container__section--telephone global-style'>
-      {/* <input type='text' placeholder='Celular' /> */}
-    </input>
+    <input type="date" placeholder='Fecha de Nacimiento' required aria-required="true" className='container__section--dateborn global-style' />
+    <input type='text' placeholder='Celular' className='container__section--telephone global-style' />
   </>
 );
 

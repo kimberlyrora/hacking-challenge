@@ -9,9 +9,13 @@
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #A3ABCC;
   padding-left: 16px;
   outline: none;
+  margin-bottom: 15px;
+}
+
+::placeholder {
+  color: #A3ABCC;
 }
 
 .container__section--document {
@@ -20,35 +24,45 @@
   grid-template-columns: 90px 1fr;
 }
 
-.container__section--select {
-  font-size: 16px;
-  border: 1px solid #CCC;
-  height: 56px;
-  background: url(http://www.stackoverflow.com/favicon.ico) 96%/20% no-repeat #EEE;
-}
-
 .container__section--typeDoc {
+  color: #494F66;
   grid-column: 1/2;
   border-radius: 4px 0px 0px 4px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url(../../../../../../assets/red_arrow.svg) 77%/16px no-repeat #FFFFFF;
+  background: url(../../../../../../assets/red_arrow.svg) 77%/12px 13px no-repeat #FFFFFF;
 }
 
 .container__section--numberId {
   grid-column: 2/3;
   border-radius: 0px 4px 4px 0px;
+  color: #494F66;
 }
 
 .container__section--dateborn {
   grid-row: 5/8;
-  background-color: lightgreen;
   border-radius: 4px;
+  color: #494F66;
+  background: #FFFFFF url(../../../../../../assets/calendar.svg) 94%/15px 16px no-repeat;
+}
+
+input[type=date]::before {
+  content: attr(placeholder);
+  width: 100%;
+}
+
+input[type=date]:focus::before,
+input[type=date]:valid::before {
+  display: none;
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 .container__section--telephone {
   grid-row: 9/12;
-  background-color: lightskyblue;
   border-radius: 4px;
+  color: #494F66;
 }
