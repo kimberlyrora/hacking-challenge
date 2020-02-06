@@ -1,6 +1,8 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import './styles.css';
+import Seccion2 from './components/section2';
+
 
 const Form = () => (
   <form className='container'>
@@ -9,8 +11,9 @@ const Form = () => (
       <b className='container__title--bold'> seguro ahora</b>
     </p>
     <p className='container__subtitle'>Ingresa los datos para comenzar</p>
-    <section className='container__section'>
-      <div className='container__section--document'>
+    <section className='container__inputs'>
+
+      {/* <div className='container__section--document'>
         <div className='container__section--typeDoc'>
           <select>
             {
@@ -27,32 +30,10 @@ const Form = () => (
       </div>
       <div className='container__section--telephone'>
         <input type='text' placeholder='Celular' />
-      </div>
-      <div className='container__section--politic1 politics'>
-        <div className='container__section--checkbox'>
-          <input type='checkbox' />
-        </div>
-        <div className='container__section--description'>
-          <p>
-          Acepto la
-            <u>Política de Protección de Datos Personales y los Términos y Condiciones.</u>
-          </p>
-        </div>
-      </div>
-      <div className='container__section--politic2 politics'>
-        <div className='container__section--checkbox'>
-          <input type='checkbox' />
-        </div>
-        <div className='container__section--description'>
-          <p>
-          Acepto la
-            <u>Política de Envío de Comunicaciones Comerciales.</u>
-          </p>
-        </div>
-      </div>
-      <div className='container__section--button'>
-        <button type='button'>Comencemos</button>
-      </div>
+      </div> */}
+    </section>
+    <section className='container__politics'>
+      <Seccion2 />
     </section>
   </form>
 );
