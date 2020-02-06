@@ -1,0 +1,26 @@
+.container__section--dateborn {
+  grid-row: 5/8;
+  border-radius: 4px;
+  color: #494F66;
+  background: #FFFFFF url(../../assets/calendar.svg) 94%/15px 16px no-repeat;
+}
+
+input[type=date]::before {
+  content: attr(placeholder);
+  width: 100%;
+}
+
+input[type=date]:focus::before,
+input[type=date]:valid::before {
+  display: none;
+}
+
+[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.container__section--telephone {
+  grid-row: 9/12;
+  border-radius: 4px;
+  color: #494F66;
+}

@@ -1,0 +1,27 @@
+$color1: #FFFFFF;
+$color2: #C5CBE0;
+
+.global-style {
+	width: 100%;
+	height: 56px;
+	background: $color1;
+  border: 1px solid $color2;
+  box-sizing: border-box;
+	font-family: Lato;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+	padding-left: 16px;
+	outline: none;
+	margin-bottom: 15px;
+}
+
+.container__section--typeDoc {
+	color: $color4;
+	grid-column: 1 / 2;
+	border-radius: 4px 0px 0px 4px;
+	appearance: none;
+	background: url(../../assets/red_arrow.svg) 77% / 12px 13px no-repeat $color1;
+}
+

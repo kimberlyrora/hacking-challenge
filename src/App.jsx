@@ -2,20 +2,25 @@
 import React from 'react';
 import './App.css';
 import Login from './pages/Login';
-import Header from './components/Header/index';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
-const App = () => (
+const data = require('./db.json');
+
+const App = () => {
+  return (
   <div className='app'>
     <div className='app__header'>
       <Header />
     </div>
     <div className='app__body'>
-      <Login />
+      <Login data={data[0]} />
     </div>
     <div className='app__footer'>
-      hello
+      <Footer />
     </div>
   </div>
-);
+  );
+};
 
 export default App;

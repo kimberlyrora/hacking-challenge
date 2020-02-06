@@ -1,0 +1,26 @@
+[
+	{
+	"bullets": [
+		  {
+				"id": 1,
+			  "icon": "https://i.ibb.co/RhKwc5C/ic-shield.png",
+			  "description": "Cómpralo de manera fácil y rápida"
+		  },
+		  {
+				"id": 2,
+			  "icon": "https://i.ibb.co/qd504wB/ic-mobile.png",
+			  "description": "Cotiza y compra tu seguro 100% digital"
+		  },
+		  {
+				"id": 3,
+			  "icon": "https://i.ibb.co/XzfxTM0/ic-money.png",
+			  "description": "Hasta S/.12 millones de cobertura anual"
+		  },
+		  {
+				"id": 4,
+			  "icon": "https://i.ibb.co/NtTpvgH/ic-clinic.png",
+			  "description": "Más de 300 clínicas en todo el Perú"
+		  }
+	  ]
+  }
+]

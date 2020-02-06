@@ -21,6 +21,6 @@
 .app__footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  background-color: lightcoral;
+  background-color: #FFFFFF;
   grid-area: area3;
 }

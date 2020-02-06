@@ -1,0 +1,17 @@
+.footer {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(11, 1fr);
+  height: 76px;
+  box-sizing: border-box;
+  border-top: 1px solid #E4E8F7;
+}
+
+.footer__text {
+  grid-column: 2/9;
+  grid-row: 2/3;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #676F8F;
+  margin: 0;
+}

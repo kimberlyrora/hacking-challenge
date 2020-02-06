@@ -14,18 +14,12 @@
   margin-bottom: 15px;
 }
 
-.container__section--document {
-  grid-row: 1/4;
-  display: grid;
-  grid-template-columns: 90px 1fr;
-}
-
-.container__section--numberId {
-  grid-column: 2/3;
-  border-radius: 0px 4px 4px 0px;
+.container__section--typeDoc {
   color: #494F66;
-}
-
-::placeholder {
-  color: #A3ABCC;
+  grid-column: 1/2;
+  border-radius: 4px 0px 0px 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../../assets/red_arrow.svg) 77%/12px 13px no-repeat #FFFFFF;
 }
