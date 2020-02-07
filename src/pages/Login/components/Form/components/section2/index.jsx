@@ -25,7 +25,11 @@ const Section2 = () => (
         <u> Política de Envío de Comunicaciones Comerciales.</u>
       </p>
     </div>
-    <button type='button' className='container__politics--button'>
+    <button
+      type='button'
+      className='container__politics--button'
+      disabled
+    >
       Comencemos
     </button>
   </>

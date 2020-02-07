@@ -16,18 +16,18 @@
   color: #676F8F;
 }
 
-.container__inputs {
+.global__container {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.2px;
+}
+
+.container__inputs {
   color: #A3ABCC;
 }
 
 .container__politics {
   display: grid;
   grid-template-rows: repeat(11, 1fr);
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
   color: #A3ABCC;
 }

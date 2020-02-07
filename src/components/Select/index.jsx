@@ -1,15 +1,19 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import './styles.css';
 
-const Select = () => (
-  <>
-    <select className='container__section--typeDoc global-style'>
-      {
-        ['DNI', 'PASAPORTE', 'CARNET DE EXTRANJERIA'].map((doc) => <option key={doc}>{doc}</option>)
-      }
-    </select>
-  </>
-);
+const Select = (props) => {
+  const { options } = props;
+  return (
+    <>
+      <select className='container__section--typeDoc global-style'>
+        {
+          options.map((doc) => <option key={doc.id}>{doc.description}</option>)
+        }
+      </select>
+    </>
+  );
+};
 
 export default Select;

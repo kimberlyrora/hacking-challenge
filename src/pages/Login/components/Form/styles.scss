@@ -20,45 +20,21 @@ $color4: #A3ABCC;
   line-height: 28px;
 	color: $color3;
 }
-.container__inputs {
+
+.global__container {
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.2px;
+}
+
+.container__inputs {
   color: $color4;
 }
 
 .container__politics {
 	display: grid;
 	grid-template-rows: repeat(11, 1fr);
-  font-size: 12px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
   color: $color4;
 }
-
-// .container__section--document {
-// 	grid-row: 1 / 4;
-// 	display: grid;
-// 	grid-template-columns: 90px 1fr;
-// 	background-color: lightpink;
-// }
-
-// .container__section--typeDoc {
-// 	grid-column: 1 / 2;
-// }
-
-// .container__section--numberId {
-// 	grid-column: 2 / 3;
-// }
-
-// .container__section--dateborn {
-// 	grid-row: 5 / 8;
-// 	background-color: lightgreen;
-// }
-
-// .container__section--telephone {
-// 	grid-row: 9 / 12;
-// 	background-color: lightskyblue;
-// }
 
 

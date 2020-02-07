@@ -7,8 +7,7 @@ import Footer from './components/Footer';
 
 const data = require('./db.json');
 
-const App = () => {
-  return (
+const App = () => (
   <div className='app'>
     <div className='app__header'>
       <Header />
@@ -20,7 +19,6 @@ const App = () => {
       <Footer />
     </div>
   </div>
-  );
-};
+);
 
 export default App;

@@ -14,7 +14,7 @@ import flecha from '../../../../assets/flecha.png';
 import disabled_arrow from '../../../../assets/disabled_arrow.svg';
 
 const Cover = (props) => {
-  const { bullets } = props;
+  const { data: { bullets } } = props;
   const [bullet, setBullet] = useState(1);
 
   const benefit = bullets.filter((ben) => ben.id === bullet)

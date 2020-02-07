@@ -21,6 +21,82 @@
 			  "icon": "https://i.ibb.co/NtTpvgH/ic-clinic.png",
 			  "description": "Más de 300 clínicas en todo el Perú"
 		  }
-	  ]
+		],
+		"documents": [
+		  {
+				"id": 1,
+			  "description": "DNI"
+		  },
+		  {
+				"id": 2,
+			  "description": "PASAPORTE"
+		  },
+		  {
+				"id": 3,
+				"description": "CARNET DE EXTRANJERÍA"
+		  }
+		],
+		"family": [
+		  {
+				"id": 1,
+			  "description": "Cónguye"
+		  },
+		  {
+				"id": 2,
+			  "description": "Hijo"
+		  },
+		  {
+				"id": 3,
+				"description": "Padre"
+			},
+			{
+				"id": 3,
+				"description": "Madre"
+			}
+		],
+		"inputs": [
+			{
+				"id": 1,
+				"login": true,
+				"step1": true,
+				"type": "date",
+				"placeholder": "Fecha de Nacimiento",
+				"className": "container__section--dateborn global-style",
+				"name": "born"
+		  },
+		  {
+				"id": 2,
+				"login": true,
+				"step1": true,
+				"type": "text",
+				"placeholder": "Celular",
+				"className": "container__section--telephone global-style",
+				"name": "cellphone"
+		  },
+			{
+				"id": 4,
+				"type": "text",
+				"step1": true,
+				"placeholder": "Nombres",
+				"className": "",
+				"name": "name"
+			},
+			{
+				"id": 5,
+				"type": "text",
+				"step1": true,
+				"placeholder": "Apellido Paterno",
+				"className": "",
+				"name": "lastname1"
+			},
+			{
+				"id": 6,
+				"type": "text",
+				"step1": true,
+				"placeholder": "Apellido Materno",
+				"className": "",
+				"name": "lastname2"
+		  }
+		]
   }
 ]

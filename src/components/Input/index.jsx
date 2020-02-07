@@ -1,23 +1,26 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import './styles.css';
 
-const Input = () => (
-  <>
-    {/* <input type='text' placeholder='Nro. de Documento' className='container__section--numberId global-style' /> */}
+const Input = (props) => {
+  const {
+    attributes: { type, placeholder, className, name },
+    born,
+    setBorn,
+  } = props;
+  return (
     <input
-      type="date"
-      placeholder='Fecha de Nacimiento'
+      name={name}
+      type={type}
+      placeholder={placeholder}
       required
       aria-required="true"
-      className='container__section--dateborn global-style'
+      className={className}
+      value={born}
+      onChange={(e) => setBorn(e)}
     />
-    <input
-      type='text'
-      placeholder='Celular'
-      className='container__section--telephone global-style'
-    />
-  </>
-);
+  );
+};
 
 export default Input;
