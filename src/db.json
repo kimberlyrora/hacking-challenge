@@ -60,7 +60,7 @@
 				"type": "text",
 				"step1": true,
 				"placeholder": "Nombres",
-				"className": "",
+				"className": "container__section--name",
 				"name": "name"
 			},
 			{
@@ -68,7 +68,7 @@
 				"type": "text",
 				"step1": true,
 				"placeholder": "Apellido Paterno",
-				"className": "",
+				"className": "container__section--lastname1",
 				"name": "lastname1"
 			},
 			{
@@ -76,7 +76,7 @@
 				"type": "text",
 				"step1": true,
 				"placeholder": "Apellido Materno",
-				"className": "",
+				"className": "container__section--lastname2",
 				"name": "lastname2"
 		  },
 			{
