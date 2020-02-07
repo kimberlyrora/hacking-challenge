@@ -2,7 +2,7 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
 import './styles.css';
-
+import { Link } from '@reach/router';
 
 const Section2 = (props) => {
   const { disabled, setValues, setDisable } = props;
@@ -36,14 +36,14 @@ const Section2 = (props) => {
           <u> Política de Envío de Comunicaciones Comerciales.</u>
         </p>
       </div>
-      <button
-        type='button'
+      <Link to='/addFamily'
+        // type='button'
         className={disabled ? 'container__politics--button container__politics--disabled'
                             : 'container__politics--button container__politics--abled'}
         disabled={setDisable()}
       >
         Comencemos
-      </button>
+      </Link>
     </>
   );
 };

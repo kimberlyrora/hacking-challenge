@@ -57,6 +57,30 @@
 		"inputs": [
 			{
 				"id": 1,
+				"type": "text",
+				"step1": true,
+				"placeholder": "Nombres",
+				"className": "",
+				"name": "name"
+			},
+			{
+				"id": 2,
+				"type": "text",
+				"step1": true,
+				"placeholder": "Apellido Paterno",
+				"className": "",
+				"name": "lastname1"
+			},
+			{
+				"id": 3,
+				"type": "text",
+				"step1": true,
+				"placeholder": "Apellido Materno",
+				"className": "",
+				"name": "lastname2"
+		  },
+			{
+				"id": 4,
 				"login": true,
 				"step1": true,
 				"type": "date",
@@ -65,37 +89,12 @@
 				"name": "born"
 		  },
 		  {
-				"id": 2,
+				"id": 5,
 				"login": true,
-				"step1": true,
 				"type": "text",
 				"placeholder": "Celular",
 				"className": "container__section--telephone global-style",
 				"name": "cellphone"
-		  },
-			{
-				"id": 4,
-				"type": "text",
-				"step1": true,
-				"placeholder": "Nombres",
-				"className": "",
-				"name": "name"
-			},
-			{
-				"id": 5,
-				"type": "text",
-				"step1": true,
-				"placeholder": "Apellido Paterno",
-				"className": "",
-				"name": "lastname1"
-			},
-			{
-				"id": 6,
-				"type": "text",
-				"step1": true,
-				"placeholder": "Apellido Materno",
-				"className": "",
-				"name": "lastname2"
 		  }
 		]
   }

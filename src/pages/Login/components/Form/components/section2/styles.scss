@@ -27,6 +27,11 @@ $color4: #83CC5E;
 	// color: $color6;
 	height: 52px;
 	border: none;
+	text-decoration: none;
+	display: flex;
+  flex-direction: column;
+	text-align: center;
+	justify-content: center;
 }
 
 .container__politics--abled {

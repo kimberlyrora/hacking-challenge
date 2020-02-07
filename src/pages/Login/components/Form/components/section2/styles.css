@@ -21,6 +21,11 @@
   text-transform: uppercase;
   height: 52px;
   border: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .container__politics--abled {
