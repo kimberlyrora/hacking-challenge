@@ -6,8 +6,8 @@ import './styles.css';
 const Input = (props) => {
   const {
     attributes: { type, placeholder, className, name },
-    born,
-    setBorn,
+    value,
+    setValues,
   } = props;
   return (
     <input
@@ -17,8 +17,8 @@ const Input = (props) => {
       required
       aria-required="true"
       className={className}
-      value={born}
-      onChange={(e) => setBorn(e)}
+      value={value}
+      onChange={(e) => setValues(e)}
     />
   );
 };

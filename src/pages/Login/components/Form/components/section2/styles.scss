@@ -24,9 +24,19 @@ $color4: #83CC5E;
   font-size: 14px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-	color: $color6;
+	// color: $color6;
 	height: 52px;
 	border: none;
+}
+
+.container__politics--abled {
+	color: #FFFFFF;
+	background-color: $color1;
+}
+
+.container__politics--disabled {
+	color: #C5CBE0;
+	background-color: #F0F2FA;
 }
 
 // -------> Checkbox button

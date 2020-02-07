@@ -7,7 +7,7 @@ import Input from '../../../../../../components/Input';
 
 
 const Section1 = (props) => {
-  const { data: { documents, inputs }, born, setBorn } = props;
+  const { data: { documents, inputs }, value, setValues } = props;
 
   const inputsLogin = inputs.filter((inp) => inp.login)
                             .map((input) => (
@@ -15,8 +15,8 @@ const Section1 = (props) => {
                                 name={input.name}
                                 key={input.id}
                                 attributes={input}
-                                born={born[input.name]}
-                                setBorn={setBorn}
+                                value={value[input.name]}
+                                setValues={setValues}
                               />
                             ));
 
@@ -25,9 +25,11 @@ const Section1 = (props) => {
       <div className='container__section--document'>
         <Select options={documents} />
         <input
+          name='document'
           type='text'
           placeholder='Nro. de Documento'
           className='container__section--numberId global-style'
+          onChange={(e) => setValues(e)}
         />
       </div>
       {inputsLogin}

@@ -1,15 +1,13 @@
 .container__politics--politic1 {
   grid-row: 2/4;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  grid-template: repeat(2, 1fr)/repeat(10, 1fr);
 }
 
 .container__politics--politic2 {
   grid-row: 5/7;
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  grid-template: repeat(2, 1fr)/repeat(10, 1fr);
 }
 
 .container__politics--button {
@@ -21,9 +19,18 @@
   font-size: 14px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: #ffffff;
   height: 52px;
   border: none;
+}
+
+.container__politics--abled {
+  color: #FFFFFF;
+  background-color: #EF3340;
+}
+
+.container__politics--disabled {
+  color: #C5CBE0;
+  background-color: #F0F2FA;
 }
 
 .container__politics--label {
@@ -52,7 +59,6 @@
   position: absolute;
 }
 
-/* Show the checkmark when checked */
 .container__politics--label input:checked ~ .checkmark:after {
   display: block;
 }
